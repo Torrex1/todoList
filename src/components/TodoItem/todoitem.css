@@ -1,0 +1,31 @@
+.todo-item {
+    border: 1px solid #ddd;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.todo-item__date {
+    font-size: 15px;
+}
+
+.todo-item__text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.todo-item__icons {
+    display: flex;
+    gap: 20px;
+    padding: 8px;
+}
+
+.todo-item__icons img {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
