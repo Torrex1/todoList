@@ -15,11 +15,22 @@ export default function App () {
         setTodos([newTodo, ...todos]); //todo поменять местами
         console.log(newTodo);
     }
+
+    const onDelete = (id) => {
+        setTodos(todos.filter((todo) => todo.id !== id));
+    }
+
+    const onToggle = (id) => {
+        setTodos(todos.map((todo) => todo.id === id ?
+            {...todo, completed: !todo.completed} : todo));
+    }
+
     return (
-        <HomePage />
         <HomePage
             onAdd={addTodo}
             todos={todos}
+            onToggle={onToggle}
+            onDelete={onDelete}
         />
     )
 }
