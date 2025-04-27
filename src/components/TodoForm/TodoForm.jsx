@@ -1,3 +1,5 @@
+import './todoform.css'
+
 export default function TodoForm () {
     return (
         <form className="form-todo">
